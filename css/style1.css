@@ -549,7 +549,7 @@ nav.sticky .menu li a:hover{
     }
     #service .icon{
         max-width: 50vw;
-        max-height: 50vh;
+        max-height: 50vh    ;
     }
 
 }
