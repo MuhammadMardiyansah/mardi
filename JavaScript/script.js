@@ -1,10 +1,10 @@
-const menuToggle = document.querySelector('.menu-toggle input');
-const nav = document.querySelector('nav ul');
-// const header = document.querySelector('header');
+// const menuToggle = document.querySelector('.menu-toggle input');
+// const nav = document.querySelector('nav ul');
+// // const header = document.querySelector('header');
 
-menuToggle.addEventListener('click', function() {
-    nav.classList.toggle('slide');
-});
+// menuToggle.addEventListener('click', function() {
+//     nav.classList.toggle('slide');
+// });
 
 // scroll
 $(document).ready(function(){
@@ -14,6 +14,11 @@ $(document).ready(function(){
         }else{
             $('nav').removeClass("sticky");
         }
-    })
+    });
 
-})
+    // toggle menu navbar
+    $('.menu-btn').click(function(){
+        $('nav .menu').toggleClass("active");
+        $('.menu-btn i').toggleClass("active");
+    });
+});
